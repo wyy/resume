@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper,noblankpage]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{graduate} % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+% character encoding
+\usepackage{xunicode, xltxtra}
+\setmainfont[Mapping=tex-text]{文泉驿正黑}
+\setsansfont[Mapping=tex-text]{文泉驿正黑}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{姓名}\familyname{}
+\brief{籍贯：XX省XX县 \quad 生日：xxxx-xx-xx \quad 性别：X\\
+民族：XX \qquad 政治面貌：XX \qquad 学历：硕士}
+%% \title{求职简历}
+\address{XXXX大学 123456}{}
+\mobile{\ 151xxxxxxxx}
+%% \phone{}
+\email{\ xxxxxx@gmail.com}
+\extrainfo{}
+\photo[64pt]{photo}
+\quote{求职意向：XXXXXX}
+
+\nopagenumbers{}
+
+%---------------------------------------------------------------------------
+%            content
+%---------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{教育背景}
+\cventry{2006--2010}{本科}{\ XXXX大学}{\ XX学院}{\ XX系}{}
+\cventry{2010--2013}{硕士}{\ XXXX大学}{\ XX学院}{\ XX系}{}
+%% \cvcomputer {学校：}{XXXX大学}{学历：}{本科}
+%% \cvcomputer {专业：}{信息与计算科学}{就读时间：}{2004年9月-2008年7月}
+
+\section{计算机 \&\& 英语}
+\cvline{计算机}{全国计算机等级考试四级，软件测试工程师}
+\cvline{}{熟悉 UNIX/Linux 平台下应用程序开发}
+\cvline{英语}{CET-6，能阅读并翻译相关专业资料}
+
+\section{项目经验}
+\cvproject{超轻点阵夹芯结构抗冲击实验及数值模拟分析}{本科毕业设计 \quad 2010}
+\cvline{指导教师}{XXX \quad 教授}
+\cvline{主要工作内容}{应用 ANSYS/LS-DYNA 完成超轻点阵金属结构抗弹冲击分析的建模和数值模拟计算，分别考察了子弹在点阵金属夹层板表面不同典型位置入射时的极限弹道速度，以及子弹在点阵金属夹层板表面入射不同入射角情况下的极限弹道速度。}
+
+\cvproject{基于替代模型的局部非线性动力分析}{硕士 \quad 2011至今}
+\cvline{导师}{XX \quad 教授}
+\cvline{研究主要内容}{为了提高含有局部非线性构件的复杂系统动力分析的计算速度，利用模型缩聚技术和局部刚体化方法，将自由度个数很多的复杂系统的线性部分简化为自由度较少的模型，进行动力分析时，在每个积分步内用迭代方法计算非线性部分，以附加非线性力的方式作用在简化的线性主体结构上，从而避免对整个模型进行非线性分析的迭代。}
+
+\subsection{专业能力}
+\cvline{编程}{熟练使用 C++, Fortran, Python 等编程语言，MATLAB 高级计算语言}
+\cvline{专业软件}{熟悉 Pro/E, SolidWorks，掌握 ANSYS, Patran/Nastran 等 CAE 软件}
+\cvline{}{结合 Fortran, MATLAB 做过 ANSYS 的二次开发}
+
+\section{获奖情况}
+\cvline{2006--2010}{XXXX大学XX奖学金}
+\cvline{2009}{第X届XX竞赛优秀奖}
+\cvline{2010--2013}{XX优秀研究生奖学金}
+
+\section{自我评价}
+\cvline{\Neutral}{具有较强的自学能力，善于独立思考，能快速地掌握新技术。}
+\cvline{\Neutral}{有团队合作精神，做事踏实。}
+
+\end{document}
+
+%% end of file `resume.tex'.
